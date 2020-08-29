@@ -30,7 +30,7 @@ def Kadane(A):
     ref = max_sum.index(max(max_sum))
     x = 0
     for i in range(ref,-1,-1):
-        x += lst[i]
+        x =  x + lst[i]
         if x == target_sum:
             print(a[i:ref+1])
 """
