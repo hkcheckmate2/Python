@@ -10,7 +10,7 @@ def minSum(num,k):
         heapq.heapify(num)
         t = heapq.heappop(num)
         heapq.heappush(num,math.floor(t/2))
-    return sum(num)
+    return -sum(num)
 
 L1=[5,7,8,9,4,3]
 print(minSum(L1,4))
